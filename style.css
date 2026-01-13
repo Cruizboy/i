@@ -9,12 +9,7 @@ body {
   line-height: 1.6;
   color: #333;
 }
-.b{
-  border:none;
-  background-color:white;
-  color:black;
-  cursor:pointer;
-}
+
 
 .hero {
   background-image:linear-gradient(to top, rgba(0, 0, 0, 0.724), rgba(81, 95, 106, 0)),url(ui.jpg);
@@ -160,5 +155,6 @@ span{
   width: 200px;
 }
 }
+
 
 
