@@ -4,50 +4,68 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cruiz Optimized Tech.</title>
-  <link rel="stylesheet" href="style.css">
-
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
+<header class="e">
   <header class="hero">
     <nav>
-      <h1 class="logo">CruizTech</h1>
-      <ul class="nav-links">
-  <p>get cruiz</p>
+      <h1 class="logo">CruizTech<i class="fa fa-cog" aria-hidden="true"></i></h1>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      <a href="https://www.facebook.com//Boicruiz" target="_blank">  <button class="btn">More info</button></a>
       </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
+    
     <div class="hero-content">
       <h2>Welcome to Our  Next Big Tech At large</h2>
       <p>Discover innovation and simplicity like never before.</p>
       <a href="#features" class="btn">Get Started</a>
     </div>
-  </header>
+    </header>
 
   <section id="features" class="features">
     <div class="feature">
-      <h3>Fast</h3>
+      <h3>Fast<i class="fa fa-bolt" aria-hidden="true"></i></h3>
       <p>Optimized for performance and speed.</p>
     </div>
     <div class="feature">
-      <h3>Reliable</h3>
+      <h3>Reliable <i class="fa fa-check-circle" aria-hidden="true"></i></h3>
       <p>Built with cutting-edge technologies.</p>
     </div>
     <div class="feature">
-      <h3>Secure</h3>
+      <h3>Secure <i class="fa fa-lock" aria-hidden="true"></i></h3>
       <p>Advanced security for peace of mind.</p>
     </div>
   </section>
   <section class="testimonials">
-    <h3>ABOUT</h3>
+    <h3 id="about">ABOUT</h3>
 <h4>CruizTech Company: Powering the Future Through Innovation</h4>
 <p>At CruizTech, we don’t just build technology—we engineer transformation.<br> Founded with a bold vision to bridge the gap between<br> cutting-edge innovation and real-world impact, CruizTech is a dynamic tech company committed <br>to delivering smart, scalable, and sustainable digital solutions.
 🌐 Who We Are
 CruizTech is a forward-thinking technology firm specializing in:<br>
+</br>
+
 <h5>
   - Custom Software Development.
+  
 - Cloud Infrastructure & DevOps
+
 - AI & Machine Learning Solutions.
+
 - Mobile & Web App Development.
+
 - IT Consulting & Digital Transformation.
 </h5>
 </p>
@@ -56,10 +74,9 @@ CruizTech is a forward-thinking technology firm specializing in:<br>
 
   <section class="testimonials">
     <h2>What our users say</h2>
-    <p>The big users of technology is bringing a great big innovation <br>intact to quantum marketing economy at large upbringing great effeciency.</p>
+    <p>The big users of technology is bringing a great big innovation <br>intact to quantum marketing economy at large up-bringing great Effeciency.</p>
     <div class="testimonial">
-
-      <p>"Absolutely transformed our workflow!</br> bringing great momentum of great innovation.</p>
+      <p>"Absolutely transformed our workflow!" <br> Bringing great momentum of great innovation.</p>
       <span>- Cletus Martin</span>
     </div>
     <div class="testimonial">
@@ -68,15 +85,37 @@ CruizTech is a forward-thinking technology firm specializing in:<br>
     </div>
   </section>
 
-  <footer class="footer">
-    <p>&copy; 2025 CruizTech. All rights reserved.
-        </br>
-        <p>sponsored by the Surecoins Foundation.</p>
-    </p>
-  </footer>
+  <footer class="footer" id="contact">
+    <p>&copy; 2025 CruizTech. All rights reserved.<br>
+    Sponsored by the Surecoins Foundation.</p>
+ <div class="socials">
+     <a href="https://www.facebook.com//Boicruiz" > <i class="fa-brands fa-facebook"> </i>    Facebook</a>
+          |
+        <a href="https://www.instagram.com//cruiz_daboi" > <i class="fa-brands fa-instagram"></i>
+          Instagram</a> |
+ </div>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+    
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
 
 </body>
 </html>
+
 
 
 
