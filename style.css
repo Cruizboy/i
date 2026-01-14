@@ -234,14 +234,13 @@ span{
   
   .nav-links {
     position: absolute;
-    top: 70px;
+    top: 80px;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.61);
+    background: rgba(0, 0, 0, 0.29);
     flex-direction: column;
     padding-bottom: 10px;
-    backdrop-filter: blur(5px);
-   
+    backdrop-filter: blur(8px);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
